@@ -1,0 +1,40 @@
+{
+  "name": "yireo/shopware6-integration-test-helper",
+  "description": "Utilities to help you test your Shopware plugins",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jisse Reitsma"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Yireo\\IntegrationTestHelper\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Yireo\\IntegrationTestHelper\\YireoIntegrationTestHelper",
+    "copyright": "Jisse Reitsma",
+    "label": {
+      "de-DE": "YireoIntegrationTestHelper",
+      "en-GB": "YireoIntegrationTestHelper"
+    },
+    "description": {
+      "de-DE": "Utilities to help you test your Shopware plugins",
+      "en-GB": "Utilities to help you test your Shopware plugins"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    },
+    "supportLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    }
+  }
+}
