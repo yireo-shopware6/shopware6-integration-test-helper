@@ -3,14 +3,14 @@
 **Shopware 6 plugin and library to help you build PHPUnit-based integration tests easier**
 
 ## Features
+- Custom PHPUnit bootstrap
+  - Support for various environment variables
 - Various PHP traits
   - `assertBundleIsInstalled(string $bundleName)`
   - `assertServiceExists(string $serviceId)`
   - `assertEntityExtensionExists(string $entityExtensionClass)`
 - PHP class `\Yireo\IntegrationTestHelper\Test\Integration\AbstractTestCase`
   - Includes all PHP traits already
-  - Adds the calling plugin and `YireoIntegrationTestHelper` as active plugins
-  - Adds `.env.test` flags: `FORCE_INSTALL` and `FORCE_INSTALL_PLUGINS`
 
 ## Installation
 Install this plugin and activate it:
