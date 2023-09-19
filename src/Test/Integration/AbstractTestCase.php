@@ -16,30 +16,10 @@ abstract class AbstractTestCase extends TestCase
     use AssertServiceExists;
     use AssertEntityExtensionExists;
 
-    protected function setUp(): void
-    {
-        $testBootstrapper = (new TestBootstrapper())
-            ->addActivePlugins('YireoIntegrationTestHelper', $this->getPluginName())
-            ->addCallingPlugin()
-        ;
-
-        if (isset($_ENV['FORCE_INSTALL']) && (bool)$_ENV['FORCE_INSTALL'] === true) {
-            $testBootstrapper->setForceInstall(true);
-        }
-
-        if (isset($_ENV['FORCE_INSTALL_PLUGINS']) && (bool)$_ENV['FORCE_INSTALL_PLUGINS'] === true) {
-            $testBootstrapper->setForceInstallPlugins(true);
-        }
-
-        $testBootstrapper->bootstrap();
-
-        parent::setUp();
-    }
-
     abstract public function getPluginName(): string;
 
     public function getName(): string
     {
-        return self::class;
+        return static::class;
     }
 }
