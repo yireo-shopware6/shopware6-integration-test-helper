@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Yireo\IntegrationTestHelper\Traits;
+namespace Yireo\IntegrationTestHelper\Test\Functional\Traits;
 
 use Shopware\Core\Framework\DataAbstractionLayer\ExtensionRegistry;
 
