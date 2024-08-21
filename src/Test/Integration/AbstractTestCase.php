@@ -16,9 +16,4 @@ abstract class AbstractTestCase extends TestCase
     use AssertEntityExtensionExists;
 
     abstract public function getPluginName(): string;
-
-    public function getName(): string
-    {
-        return static::class;
-    }
 }
